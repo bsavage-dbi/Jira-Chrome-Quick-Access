@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+
+  "name": "JIRA Quick Access",
+  "description": "This is a test extension for JIRA",
+  "version": "0.4",
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true
+  },
+  "icons": {
+    "48": "extIcon48.png",
+    "128": "extIcon128.png"
+  },
+  "browser_action": {
+    "default_icon": "extIcon48.png",
+    "default_popup": "index.html",
+    "default_title": "JIRA Quick Access"
+  },
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/",
+    "storage"
+  ]
+}
