@@ -11,12 +11,17 @@ $( document ).ready(function() {
     // $("#like").prop('checked', true);
 });
 
+// right strip slash character from url
+function rstripslash(url) {
+    return url.replace(/\/$/, "");
+}
+
 // Saves options to chrome.storage.sync.
 function save_options() {
   $("#status").text('Saving');
   // var color = document.getElementById('color').value;
   // var likesColor = document.getElementById('like').checked;
-  var jiraServer =  $("#jiraServer").val();
+  var jiraServer =  rstripslash($("#jiraServer").val());
   chrome.storage.sync.set({
     jiraServer: jiraServer
   }, function() {
