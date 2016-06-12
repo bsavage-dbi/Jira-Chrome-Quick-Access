@@ -9,11 +9,11 @@
     "chrome_style": true
   },
   "icons": {
-    "48": "extIcon48.png",
-    "128": "extIcon128.png"
+    "48": "img/extIcon48.png",
+    "128": "img/extIcon128.png"
   },
   "browser_action": {
-    "default_icon": "extIcon48.png",
+    "default_icon": "img/extIcon48.png",
     "default_popup": "index.html",
     "default_title": "JIRA Quick Access"
   },
