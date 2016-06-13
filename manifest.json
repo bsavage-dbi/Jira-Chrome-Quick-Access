@@ -2,7 +2,7 @@
   "manifest_version": 2,
 
   "name": "JIRA Quick Access",
-  "description": "This is a test extension for JIRA",
+  "description": "Chrome extension for quickly accessing JIRA issues and searching for issues.",
   "version": "0.4",
   "options_ui": {
     "page": "options.html",
