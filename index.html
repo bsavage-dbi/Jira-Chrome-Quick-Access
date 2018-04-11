@@ -121,7 +121,7 @@
             <div class="row control-group">
               <div class="form-group col-xs-12 floating-label-form-group controls">
                 <label>JQL</label>
-                <textarea rows="2" class="form-control" placeholder="JQL" id="jql" required data-validation-required-message="Please enter JQL."></textarea>
+                <textarea rows="1" class="form-control" placeholder="JQL" id="jql" required data-validation-required-message="Please enter JQL."></textarea>
                 <p class="help-block text-danger"></p>
               </div>
             </div>
@@ -135,6 +135,80 @@
           </form>
         </div>
       </div>
+
+      <!-- Snippets -->
+      <h3>Snippets</h3>
+      <!-- Trigger -->
+      <button class="btnCopy btn btn-primary btn-sm" data-clipboard-action="copy" data-clipboard-target="#fullStory">
+          <span class="glyphicon glyphicon-copy" aria-hidden="true"></span> Story
+      </button>
+      <button class="btnCopy btn btn-primary btn-sm" data-clipboard-action="copy" data-clipboard-target="#acceptanceCriteria">
+          <span class="glyphicon glyphicon-copy" aria-hidden="true"></span> Acceptance Criteria
+      </button>
+      <button class="btnCopy btn btn-primary btn-sm" data-clipboard-action="copy" data-clipboard-target="#givenWhenThen">
+          <span class="glyphicon glyphicon-copy" aria-hidden="true"></span> Given When Then
+      </button>
+      <br/>
+      <br/>
+      <!-- Target -->
+      <div class="panel panel-default">
+        <div class="panel-heading">Full Story</div>
+        <div class="panel-body" id="fullStory">
+          {panel:title=Story|titleBGColor=#ecf0f1} <br/>
+          As a  <br/>
+          I want to  <br/>
+          So that  <br/>
+          {panel} <br/>
+          {panel:title=Acceptance Criteria|titleBGColor=#ecf0f1} <br/>
+          h3. Scenario <br/>
+          ---- <br/>
+          *Given*  <br/>
+          *When*  <br/>
+          *Then*  <br/>
+          <br/>
+          h3. Scenario <br/>
+          ---- <br/>
+          *Given*  <br/>
+          *When*  <br/>
+          *Then*  <br/>
+          {panel} <br/>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">Acceptance Criteria</div>
+        <div class="panel panel-default">
+          <div class="panel-body" id="acceptanceCriteria">
+            {panel:title=Acceptance Criteria|titleBGColor=#ecf0f1} <br/>
+            h3. Scenario <br/>
+            ---- <br/>
+            *Given*  <br/>
+            *When*  <br/>
+            *Then*  <br/>
+            <br/>
+            h3. Scenario <br/>
+            ---- <br/>
+            *Given*  <br/>
+            *When*  <br/>
+            *Then*  <br/>
+            {panel} <br/>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">Given-When-Then</div>
+        <div class="panel panel-default">
+          <div class="panel-body" id="givenWhenThen">
+            h3. Scenario <br/>
+            ---- <br/>
+            *Given*  <br/>
+            *When*  <br/>
+            *Then*  <br/>
+          </div>
+        </div>
+      </div>
+
   </section>
 
   <!-- Footer -->
@@ -166,6 +240,7 @@
   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
   <script src="js/classie.js"></script>
   <script src="js/cbpAnimatedHeader.js"></script>
+  <script src="js/clipboard.min.js"></script>
 
   <!-- Contact Form JavaScript -->
   <script src="js/jqBootstrapValidation.js"></script>

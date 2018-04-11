@@ -1,6 +1,9 @@
 $( document ).ready(function() {
     $("#jiraKey").focus();
 });
+
+new Clipboard('.btnCopy');
+
 $( "#showOptions" ).click(function() {
   if (chrome.runtime.openOptionsPage) {
     // New way to open options pages, if supported (Chrome 42+).
